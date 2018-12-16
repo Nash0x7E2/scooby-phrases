@@ -56,15 +56,14 @@ class ScoobyPhrasesState extends State<ScoobyPhrases>
 
   void onFABPress() {
     _controller.reverse().then((_) => _controller.forward());
-
     bloc.generatePhrase();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: ScaleTransition(
-        scale: _controller,
+      floatingActionButton: RotationTransition(
+        turns: _controller,
         child: GestureDetector(
           child: Image.asset(
             "assets/Scooby_face.png",
