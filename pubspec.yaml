@@ -1,0 +1,31 @@
+name: scooby_phrases
+description: Random phrases from Scooby Doo
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/Velma.png
+    - assets/Fred.png
+    - assets/Scooby.png
+    - assets/Scooby_face.png
+    - assets/Shaggy.png
+    - assets/Daphne.png
+    - assets/main_logo.png
+    - assets/Scrappy.png
+    - assets/Villian.png
