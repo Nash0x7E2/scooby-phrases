@@ -33,8 +33,7 @@ class ScoobyPhrases extends StatefulWidget {
   ScoobyPhrasesState createState() => ScoobyPhrasesState();
 }
 
-class ScoobyPhrasesState extends State<ScoobyPhrases>
-    with SingleTickerProviderStateMixin {
+class ScoobyPhrasesState extends State<ScoobyPhrases> with SingleTickerProviderStateMixin {
   ScoobyBloc bloc;
   AnimationController _controller;
   Animation<double> scaleAnimation;
@@ -42,8 +41,7 @@ class ScoobyPhrasesState extends State<ScoobyPhrases>
   void initState() {
     super.initState();
     bloc = ScoobyBloc();
-    _controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 400));
+    _controller =  AnimationController(vsync: this, duration: Duration(milliseconds: 400), lowerBound: 0.9);
     _controller.forward();
   }
 
